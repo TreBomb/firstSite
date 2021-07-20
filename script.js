@@ -1,5 +1,8 @@
-const h2 = document.createElement('h2');
-h2.class = "java"
-h2.textContent = "This footnote was added by JavaScript!";
+/*Change themes with buttons*/
+const button = document.getElementsByClassName("themes")
+const style = button.value;
 
-document.querySelector('body').appendChild(h2);
+function swapStyle(sheet){
+	document.getElementById('pagestyle').setAttribute('href', sheet);
+}
+button.onclick =  swapStyle(style);

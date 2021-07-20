@@ -2,7 +2,8 @@
 <html lang="en">
   <head>
     <!--linking the overall CSS as well as cusom Google Fonts-->
-    <link rel="stylesheet" href="style.css">
+    <link id="pagestyle" rel="stylesheet" href="./style.css">
+    <script type="text/javascript" src="./script.js"></script>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,12 +24,42 @@
             <a class="active" href="./extras.html">Extras</a>
         </div>
 
-        <!--Section one of the main website page-->
-        <h2 class="title">Oh No</h2>
-        <h2 class="subtitle">It seems there's nothing here!</h2>
-        <p class="message">Come back later and maybe I'll add something to this page. But for now, it's blank.</p>
-        <p class ="message">My current plan for this page is to make it have buttons with options to change the css style, giving the page a whole new look with each one!</p>
-        <script src="script.js"></script>
+        <div id="content">
+            <!--The main message displayed on the page-->
+            <div id="main">
+                <h2 class="title">The Extras Page</h2>
+                <h2 class="subtitle">Test Out Different Themes!</h2>
+                <p class="message">Press the different buttons to view various unique CSS styles! None of the HTML is changing!</p>
+            </div>
+
+            <!--Block units to showcase more changes to the style-->
+            <div class="unit">
+
+            </div>
+
+            <div class="unit">
+
+            </div>
+
+            <div class="unit">
+
+            </div>
+        </div>
+
+        <div id="bar">
+            <!--The buttons to change CSS theme-->
+            <p class="message">Themes</p>
+            <div id="buttons">
+                <button type="button" class="themes" value="./style.css" onclick="swapStyle('./style.css')">Default</button>
+                <button type="button" class="themes" value="./bubblegum.css" onclick="swapStyle('./bubblegum.css')">Bubble Gum</button>
+                <button type="button" class="themes">Totally Goth</button>
+                <button type="button" class="themes">The Roboto</button>
+                <button type="button" class="themes">Sleek Future</button>
+                <button type="button" class="themes">Outer Space</button>
+                <button type="button" class="themes">Oldschool</button>
+                <button type="button" class="themes">Rainbow</button>
+            </div>
+        </div>
     </div>
   </body>
 </html>
